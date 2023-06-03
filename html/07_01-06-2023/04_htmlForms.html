@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>html forms</title>
+</head>
+
+<body>
+    <!-- in action write a page name which you opened by button
+        if we can not send another page set # in action.
+
+        in method,
+        get => all information display in URL. it has limitation to display information till 255.
+
+        post => wrap all information and set it to the next page. it has no limitation
+    -->
+    <form action="#" method="post" name="form1">
+        <label for="user">Full Name </label>
+        <!-- value="abc" readonly -->
+        <input type="text" placeholder="Enter name" required minlength="2" maxlength="12" id="user" name="uname">
+        <br><br>
+
+        <br><br>
+        <button type="button">Button</button>
+        <button type="submit">Submit</button>
+        <button type="reset">Reset</button>
+
+        <br><br>
+        <input type="button" name="" id="" value="Inp-Button">
+        <input type="submit" name="" id="" value="Inp-submit">
+        <input type="reset" name="" id="" value="inp-reset">
+    </form>
+</body>
+
+</html>
