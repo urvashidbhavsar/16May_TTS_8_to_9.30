@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        img {
+            height: 300px;
+            width: 300px;
+        }
+
+        /* parent class */
+        .main {
+            position: relative;
+        }
+
+        /* child class */
+        .img1 {
+            position: absolute;
+            top: 0;
+            left: 0;
+        }
+
+        .img2 {
+            position: absolute;
+            top: 70px;
+            left: 70px;
+        }
+
+        .img3 {
+            position: absolute;
+            top: 140px;
+            left: 140px;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- position relative like a parent 
+        position absolute like a child
+    -->
+    <div class="main">
+        <div class="img1">
+            <img src="images/wallpaper.jpg" alt="">
+        </div>
+        <div class="img2">
+            <img src="images/wallpaper1.jpg" alt="">
+        </div>
+        <div class="img3">
+            <img src="images/wallpaper2.jpg" alt="">
+        </div>
+    </div>
+</body>
+
+</html>
