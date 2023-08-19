@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+</head>
+
+<body>
+    <div class="regpage">
+        <h2>New User</h2>
+        <form action="#">
+            <!-- firstname -->
+            <div class="row">
+                <div class="col">First name</div>
+                <div class="col">
+                    <input type="text" id="fname" onblur="return blnkCheck(this, 'msg1')"
+                        onkeyup="return nameValid(this, 'msg1')">
+                </div>
+                <div class="col">
+                    <span id="msg1" class="msg"></span>
+                </div>
+            </div>
+            <!-- lastname -->
+            <div class="row">
+                <div class="col">Last name</div>
+                <div class="col">
+                    <!-- this is reference varible. check current value -->
+                    <input type="text" id="lname" onblur="return blnkCheck(this, 'msg2')"
+                        onkeyup="return nameValid(this, 'msg2')">
+                </div>
+                <div class="col">
+                    <span id="msg2" class="msg"></span>
+                </div>
+            </div>
+            <!-- gender -->
+            <div class="row">
+                <div class="col">Gender</div>
+                <div class="col">
+                    <input type="radio" name="gen" id="male" onblur="return checkradio(this, 'msg3')">
+                    <label for="">Male</label>
+                    <input type="radio" name="gen" id="female" onblur="return checkradio(this, 'msg3')">
+                    <label for="">Female</label>
+                </div>
+                <div class="col">
+                    <span id="msg3" class="msg"></span>
+                </div>
+            </div>
+            <!-- address -->
+            <div class="row">
+                <div class="col">Address</div>
+                <div class="col">
+                    <textarea name="" id="addr" cols="33" rows="3" onblur="return blnkCheck(this, 'msg4')"
+                        onkeyup="return checkAddress(this, 'msg4')" maxlength="200"
+                        placeholder="Enter 30 atleast character"></textarea>
+                </div>
+                <div class="col">
+                    <span id="msg4" class="msg"></span>
+                </div>
+            </div>
+            <!-- city -->
+            <div class="row">
+                <div class="col">City</div>
+                <div class="col">
+                    <select name="" id="city" onblur="return dropcheck(this, 'msg5')">
+                        <option value="-1">---select---</option>
+                        <option value="">Surat</option>
+                    </select>
+                </div>
+                <div class="col">
+                    <span id="msg5" class="msg"></span>
+                </div>
+            </div>
+            <!-- mobile no -->
+            <div class="row">
+                <div class="col">Mobile No</div>
+                <div class="col">
+                    <input type="text" onblur="return blnkCheck(this,'msg6')"
+                        onkeyup="return checkNumValid(this, 'msg6')" id="mobile" maxlength="10">
+                </div>
+                <div class="col">
+                    <span id="msg6" class="msg"></span>
+                </div>
+            </div>
+            <!-- email id -->
+            <div class="row">
+                <div class="col">Email Id</div>
+                <div class="col">
+                    <input type="text" onblur="return blnkCheck(this,'msg7')"
+                        onkeyup="return checkEmailValid(this, 'msg7')" id="mail">
+                </div>
+                <div class="col">
+                    <span id="msg7" class="msg"></span>
+                </div>
+            </div>
+            <!-- password -->
+            <div class="row">
+                <div class="col">password</div>
+                <div class="col pass-icon">
+                    <input type="password" onblur="return blnkCheck(this,'msg8')"
+                        onkeyup="return checkpassValid(this, 'msg8')" id="pass">
+                    <div class="icon" onclick="return showPass('pass','picon')">
+                        <span class="fa-regular fa-eye" id="picon"></span>
+                    </div>
+                </div>
+                <div class="col">
+                    <span id="msg8" class="msg"></span>
+                </div>
+            </div>
+            <!-- re- password -->
+            <div class="row">
+                <div class="col">re-enter password</div>
+                <div class="col pass-icon">
+                    <input type="password" onblur="return blnkCheck(this,'msg9')"
+                        onkeyup="return comparePass(this, 'pass', 'msg9')" id="repass">
+                    <div class="icon" onclick="return showPass('repass','pcicon')">
+                        <span class="fa-regular fa-eye" id="pcicon"></span>
+                    </div>
+                </div>
+                <div class="col">
+                    <span id="msg9" class="msg"></span>
+                </div>
+            </div>
+            <!-- submit button -->
+            <div class="row">
+                <div class="col"></div>
+                <div class="col">
+                    <button type="submit" onclick="return checkFormValid()">Submit</button>
+                </div>
+                <div class="col"></div>
+            </div>
+
+            <p id="p1" style="color: rgb(193, 19, 19);">Note : password between 8 to 12 characters which contain at
+                least one
+                lowercase letter, one uppercase
+                letter, one
+                numeric
+                digit, and one special character</p>
+        </form>
+    </div>
+
+
+
+
+
+    <script src="script.js"></script>
+</body>
+
+</html>
