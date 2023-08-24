@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        img {
+            height: 400px;
+            width: 500px;
+        }
+    </style>
+</head>
+
+<body>
+    <img src="https://img.freepik.com/free-vector/colorful-palm-silhouettes-background_23-2148541792.jpg" alt=""
+        class="image">
+
+    <script src="jquery.js"></script>
+    <script>
+        $(document).ready(function () {
+            $(".image").mouseover(function () {
+                $(".image").fadeTo(2000, 0.5)
+            })
+            $(".image").mouseout(function () {
+                $(".image").fadeTo(2000, 1)
+            })
+        })
+    </script>
+</body>
+
+</html>
