@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <button id="btn1">html</button>
+    <button id="btn2">text</button>
+    <button id="btn3">val</button>
+    <hr>
+    <p id="p1">Hello User</p>
+    <p id="p2">Hello User</p>
+    <input type="text" name="" id="" value="">
+
+    <script src="https://code.jquery.com/jquery-3.7.0.js"></script>
+    <script>
+        $(document).ready(function () {
+            $("#btn1").click(function () {
+                $("#p1").html("<b>this is jquery funtion</b>")
+            })
+            $("#btn2").click(function () {
+                $("#p2").text("<b>this is jquery funtion</b>")
+            })
+            $("#btn3").click(function () {
+                $("input").val("hello")
+            })
+        })
+    </script>
+</body>
+
+</html>
