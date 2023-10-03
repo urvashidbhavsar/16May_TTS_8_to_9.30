@@ -1,0 +1,99 @@
+@import url('https://fonts.googleapis.com/css2?family=Archivo&family=Nunito&family=Poppins&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+a{
+    text-decoration: none;
+}
+ul{
+    list-style-type: none;
+}
+h1,h2,h3,h4,h5,h6,p{
+    margin: 0;
+}
+.btnshape{
+    height: 50px;
+    padding: 0px 30px;
+    border: none;
+    font-size: 17px;
+    border-radius: 40px;
+    font-family: "Poppins",sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+}
+.btnpink{
+    background-color: #f64b3c;
+    color: white;
+}
+/* =========================================== */
+header{
+    position: fixed;
+    top : 0;
+    width: 100%;
+    z-index: 111;
+    box-shadow: inset 0px 20px 13px 2px black;
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+    background-color: rgba(0, 0, 0, 0.354);
+}
+header .navbar .logo{
+    height: 70px;
+    width: 70px;
+}
+header .navbar ul{
+    width: 100%;
+    justify-content: end;
+    column-gap: 30px;
+}
+header .navbar ul a{
+    color: white;
+    font-size: 18px;
+    font-family: "Poppins",sans-serif;
+}
+.homepage{
+    background: url(images/homeimg.jpg) no-repeat center white;
+    background-size: cover;
+    position: relative;
+    z-index: 1;
+}
+.homepage::after{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.442);
+    z-index: -1;
+}
+.homepage .homep{
+    padding: 150px 0px;
+}
+.homepage h1{
+    color: white;
+    font-family:"Archivo",sans-serif;
+    text-transform: capitalize;
+    font-size: 55px;
+}
+.homepage p{
+    color: white;
+    font-family: "Nunito",sans-serif;
+    font-size: 20px;
+}
+.chefDetails{
+    background: url(images/Design.png) no-repeat center #f6eedf;
+    background-size: contain;
+}
+.chefDetails h1{
+    font-size: 50px;
+    color: #f64b3c;
+}
+.chefDetails p{
+    color: #f64b3c;
+}
+.chefDetails h3{
+    color: #f64b3c;
+    font-weight: 600;
+}
