@@ -1,0 +1,47 @@
+HTML =>
+
+(1) what is a diff between inline tag or block tag? 
+= block tag cover full row while inline tag take a space according content.
+
+(2) types of tag? 
+= closing tag 
+= non-closing tag(self closing tag) 
+ex, <img>, <link>,<br>, <hr>, <meta>, <input> etc
+
+(3) what is meta tag? 
+= meta tag send page information to browser.
+
+(4) if meta tag are removed from structure so any effect show in page?
+= yes, if removed all design are shown as setting but responsive not work proper.
+
+(5) which tags are use to create html layout? 
+= <section>, <header>, <footer>, <nav>, <main>, <div>, <article>, <aside> 
+
+(6) what is <!DOCTYPE>?
+= it is not a document type. it is html5 version. 
+
+(7) which tags are dropped from html5?
+= <strike>, <tt>, <dir>, <center> etc 
+
+(8) which attribute are dropped from html5?
+= background, bgcolor, align etc 
+
+(9) what is use of <picture> tag? 
+= use to change image at a time of responsive.
+
+(10) what is use of <datalist> tag? 
+= use to set a suggession list <datalist> and <option> tag 
+there is no any structure of <datalist> tag. 
+depend on <input> type.
+
+(11) what is diff between html and html5?
+html5 support audio, video, graphics like <svg> and <canvas>
+
+css =>
+(1) which css first apply 
+inline => internal => external 
+
+(2) apply font family but not from css builtin or google font?
+download font => install => c:/window/fonts => do copy paste =>as per required need restart system => 
+use @font-face to apply your font in page bcz we need to host with font folder.
+

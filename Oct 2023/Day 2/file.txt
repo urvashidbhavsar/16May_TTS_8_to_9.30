@@ -1,0 +1,31 @@
+(1)use of float and clear
+= when use float set block content as inline content 
+= clear use to clear float value
+= but now days float not used there is replacing property are there display flex and grid.
+
+(2) which property are only effected when we apply display flex?
+= flex-direction, flex-wrap, flex-flow, flex-grow, flex-shrink, flex-basis, flex, order, justify-content, align-item, align-self, place-content, gap etc 
+
+(3) which property are only effected when we apply display grid?
+= grid-template-row, grid-template-column, place-content, place-item, grid-row, grid-column, grid-row-start, grid-row-end, grid-column-start, grid-column-end, grid-area etc
+
+(4) how effected vertical-align ?
+= when we or apply image scale effect and also apply responsive image. so image cover self area or parent div cover self area so for adjust image use vertical align.
+
+(5) what is a diff between background-clip and background-origin?
+= background-clip effected content wise area.
+= background-origin set background image position.
+
+(6) which property effected with position?
+= top, bottom, left, right and z-index 
+= position : static (default) 
+
+(7) pseudo element and pseudo class?
+= pseudo element specific work on some element parts start with (::) symbol
+
+= pseudo class work on specified element and effected on mouse over start with (:) symbol
+
+(8) gradient color = linear, radial, conic 
+
+(9) overflow = this property is logical property. it depend on our design.
+

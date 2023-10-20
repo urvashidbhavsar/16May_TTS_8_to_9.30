@@ -1,0 +1,16 @@
+$red:red;
+$width250 :250px;
+.mydiv{
+    height:auto;
+    width: $width250;
+    border: 2px solid black;
+    padding: 20px;
+
+    p{
+        color: $red;
+
+        a{
+            color: black;
+        }
+    }
+}
